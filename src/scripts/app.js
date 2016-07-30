@@ -11,7 +11,7 @@ function hello() {
 $(function(){
 	"use strict";
 
-	$("h1").html("helo?");
+	$("h1").html("hel;o?");
 	hello();
 
 });
