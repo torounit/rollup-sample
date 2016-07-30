@@ -6,14 +6,14 @@ import babel    from 'rollup-plugin-babel'
 
 
 export default {
-	entry: 'src/main.js',
-	dest: 'dist/bundle.js',
+	entry: 'src/app.js',
+	dest: 'dist/app.js',
 	plugins: [
+		npm({ jsnext: true }), // npmモジュールを`node_modules`から読み込む
 		replace({
 			'process.env.NODE_ENV': '"production"'
 		}),
-		npm({ jsnext: true }), // npmモジュールを`node_modules`から読み込む
 		commonjs(), // CommonJSモジュールをES6に変換
-		babel() // ES5に変換
-	]
+		babel(), // ES5に変換
+	],
 }
