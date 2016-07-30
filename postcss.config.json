@@ -1,8 +1,9 @@
 {
   "use": [
     "postcss-import",
+    "postcss-url",
     "postcss-cssnext"
   ],
-  "input": "src/styles/*.css",
+  "input": "src/styles/app.css",
   "dir": "dist/styles/"
 }

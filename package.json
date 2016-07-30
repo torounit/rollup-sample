@@ -8,7 +8,8 @@
     "build": "rollup -c",
     "watch:js": "rollup -c -w",
     "build:css": "postcss -c postcss.config.json",
-    "watch": "npm run watch:js",
+    "watch:css": "postcss -c postcss.config.json -w",
+    "watch": "npm run watch:js & npm run watch:css",
     "start": "npm run build && npm run bs & npm run watch"
   },
   "author": "",
@@ -26,6 +27,7 @@
     "postcss-cli": "^2.5.2",
     "postcss-cssnext": "^2.7.0",
     "postcss-import": "^8.1.2",
+    "postcss-url": "^5.1.2",
     "rollup": "^0.34.1",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.3.0",
