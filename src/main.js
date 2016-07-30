@@ -5,12 +5,13 @@ import $ from 'jquery';
 
 
 function hello() {
-	console.log('hello');
+	console.log('hello?');
 }
 
 $(function(){
 	"use strict";
 
+	$("h1").html("hello?");
 	hello();
 
 });
