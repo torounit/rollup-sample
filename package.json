@@ -6,9 +6,10 @@
   "scripts": {
     "bs": "browser-sync start --server ./ --files '**/*.html, dist/**/*.*' --no-notify",
     "build": "rollup -c",
-    "build:watch": "rollup -c -w",
-    "watch": "npm run bs & npm run build:watch",
-    "start": "npm run build && npm run watch"
+    "watch:js": "rollup -c -w",
+    "build:css": "postcss -c postcss.config.json",
+    "watch": "npm run watch:js",
+    "start": "npm run build && npm run bs & npm run watch"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,9 @@
     "babel-preset-es2015-rollup": "^1.1.1",
     "browser-sync": "^2.13.0",
     "jquery": "^3.1.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
     "rollup": "^0.34.1",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.3.0",

@@ -1,0 +1,8 @@
+{
+  "use": [
+    "postcss-import",
+    "postcss-cssnext"
+  ],
+  "input": "src/styles/*.css",
+  "dir": "dist/styles/"
+}
