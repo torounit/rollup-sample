@@ -4,15 +4,10 @@
 import $ from 'jquery';
 
 
-function hello() {
-	console.log('hell2?');
-}
-
 $(function(){
 	"use strict";
 
-	$("h1").html("hel;o?");
-	hello();
+	$("h1").html("hello ?");
 
 });
 

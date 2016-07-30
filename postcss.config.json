@@ -5,5 +5,5 @@
     "postcss-cssnext"
   ],
   "input": "src/styles/app.css",
-  "dir": "dist/styles/"
+  "dir": "public/styles/"
 }

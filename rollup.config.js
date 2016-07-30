@@ -7,7 +7,8 @@ import babel    from 'rollup-plugin-babel'
 
 export default {
 	entry: 'src/scripts/app.js',
-	dest: 'dist/scripts/app.js',
+	dest: 'public/scripts/app.js',
+	external: ['./bundle'],
 	plugins: [
 		npm({ jsnext: true }), // npmモジュールを`node_modules`から読み込む
 		replace({
